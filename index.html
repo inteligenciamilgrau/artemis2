@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTEMIS 2 | Simulações Espaciais AI - 1 de Abril 2026</title>
+    <meta name="description" content="Simulação de voo e viagem espacial para a Lua com a missão Artemis 2 em cooperação com as inteligências artificiais de última geração.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Artemis_program_logo.svg">
+</head>
+<body>
+
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <span class="date-badge">1 DE ABRIL, 2026</span>
+            <h1>Artemis 2</h1>
+            <p>Escolha a sua jornada orbital com o sistema de simulação AI de sua preferência.</p>
+        </header>
+
+        <section class="simulations-grid">
+            
+            <!-- GPT 5.4 PRO -->
+            <a href="artemis2_chat_gpt_simulacao.html" class="card gpt-card">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V12L16 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>GPT 5.4 PRO</h2>
+                    <p>Foco em precisão orbital e cálculos cinéticos complexos com lógica unificada.</p>
+                </div>
+                <button class="btn">Iniciar Voo</button>
+            </a>
+
+            <!-- GEMINI 3.1 PRO -->
+            <a href="artemis2_gemini.html" class="card gemini-card">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="white"/>
+                        <circle cx="12" cy="12" r="5" fill="#4285f4"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>GEMINI 3.1 PRO</h2>
+                    <p>Navegação multimodal em tempo real com processamento holográfico de dados.</p>
+                </div>
+                <button class="btn">Acessar Lançamento</button>
+            </a>
+
+            <!-- CLAUDE OPUS 4.6 -->
+            <a href="artemis2-opusv5.html" class="card claude-card">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4L4 20H20L12 4Z" fill="white" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Claude Opus 4.6</h2>
+                    <p>Simulação narrativa profunda com ênfase em sistemas de biosuporte e ética espacial.</p>
+                </div>
+                <button class="btn">Entrar na Cabine</button>
+            </a>
+
+        </section>
+
+        <footer style="margin-top: 5rem; opacity: 0.5; font-size: 0.8rem;">
+            &copy; 2026 Artemis Mission Control | Orion II Simulation Core
+        </footer>
+    </div>
+
+    <!-- Micro-animations for the mouse follow -->
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const blobs = document.querySelectorAll('.blob');
+            const x = (e.clientX / window.innerWidth - 0.5) * 50;
+            const y = (e.clientY / window.innerHeight - 0.5) * 50;
+            
+            blobs.forEach((blob, index) => {
+                const factor = index === 0 ? 1 : -0.8;
+                blob.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
