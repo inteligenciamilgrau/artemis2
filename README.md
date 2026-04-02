@@ -22,7 +22,7 @@ Este projeto é uma demonstração de interfaces premium para exploração espac
 - **HTML5 & CSS3**: Estrutura e estilização pura para máxima performance.
 - **JavaScript (Vanilla)**: Lógica de animação de partículas e interação galáctica.
 - **Google Fonts (Outfit)**: Tipografia geométrica e futurista.
-- **Artemis Core Assets**: Imagens e logos oficiais (simulados).
+- **Artemis Core Assets**: Imagens e logos simulados.
 
 ## 🚀 Como Executar
 
